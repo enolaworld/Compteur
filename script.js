@@ -10,6 +10,12 @@ let total = 0;
 
 // Fonction pour calculer le total en secondes
 function totalValue() {
+  if (second.value >= 60) {
+    alert("transformation automatique des secondes en minutes");
+    let extraMinutes = Math.floor(second.value / 60);
+    minute.value = Number(minute.value) + extraMinutes;
+    second.value = second.value % 60;
+  }
   total = Number(minute.value) * 60 + Number(second.value);
 }
 

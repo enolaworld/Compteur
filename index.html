@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compteur</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div id="disp">Timer</div>
+
+      <form action="#">
+        <input
+          type="number"
+          id="minutes"
+          placeholder="MINUTES"
+          autocomplete="off"
+          value=""
+        />
+        <input
+          type="number"
+          id="seconds"
+          placeholder="SECONDS"
+          autocomplete="off"
+          value=""
+        />
+      </form>
+      <div class="btn">
+        <button id="start">START</button>
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
